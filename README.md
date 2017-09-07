@@ -10,7 +10,9 @@ Obs:Para verificar se o Banco está em execução normalmente, executar o projet
 
 Para cadastrar os Pontos de Interesse (POIS), subir o Tomcat e enviar a requisição através de qualquer Client Http:
 
+
 `Salvar POI'S:`
+Para cadastrar os POI'S, a ação pode ser realizada via Rest, inserindo o Json:
 
 método POST 
 http://localhost:8080/poi
@@ -21,6 +23,17 @@ http://localhost:8080/poi
 	"coordY" : 12
 
 }
+
+Ou abrir o Browser no endereço 'http://localhost:8080/h2', clicar em 'Connect' e executar o Script abaixo no console:
+
+INSERT INTO POI (NAME, COORDX , COORDY ) VALUES ('Lanchonete', 27, 12);
+INSERT INTO POI (NAME, COORDX , COORDY ) VALUES ('Posto', 31, 18);
+INSERT INTO POI (NAME, COORDX , COORDY ) VALUES ('Joalheria', 15, 12);
+INSERT INTO POI (NAME, COORDX , COORDY ) VALUES ('Floricultura', 19, 21);
+INSERT INTO POI (NAME, COORDX , COORDY ) VALUES ('Pub', 12, 8);
+INSERT INTO POI (NAME, COORDX , COORDY ) VALUES ('Supermercado', 23, 6);
+INSERT INTO POI (NAME, COORDX , COORDY ) VALUES ('Churrascaria', 28, 2);
+
 
 `Listar POI'S`
 
