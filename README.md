@@ -2,7 +2,7 @@
 
 
 Para construção do projeto foi utilizada a linguagem JAVA, através do Framework Spring.
-Para persistência dos dados, foi utilizado o banco H2 (Embarcado). 
+Para persistência dos dados, foi utilizado o banco H2 (Embarcado), salvando na tabela 'POI'. 
 Como servidor de aplicação, será necessário utilizar o servidor Tomcat8 (porta 8080). 
 Para execução, importar no Spring Tools Suite e executar como 'Spring Boot App', pois o mesmo já possui o Tomcat embarcado ou então subir o servidor separado e realizar o deploy pelo Maven.
 
@@ -31,7 +31,7 @@ http://localhost:8080/poi
 `Buscar POI por proximidade`
 
 método GET 
-http://localhost:8080/poi/listByProximity/20/10/1
+http://localhost:8080/poi/listByProximity/20/10/10
 
 
 
